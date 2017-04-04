@@ -50,7 +50,19 @@ A kitchen has many items.
     rack, and cinnamon, nutmeg, and vanilla on another shelf.
 
 ```json
-<!-- your answer here -->
+{
+  "kitchen": {
+    "cupboard": {
+      "bowls and plates"
+    }
+  } "electric stove": {"heating elements": {
+    "small", "medium", "large", "extra large"
+  }
+    "herbs and spice rack": {
+      "chives", "lemon grass", "mint", "cinnamon", "nutmeg", "vanilla"
+    }
+  }
+}
 ```
 
 ## Modeling Data Using JSON: Part II
@@ -62,7 +74,25 @@ delicious apple.
 Copy the JSON that you wrote for the previous question and include the new information about the kitchen.
 
 ```json
-<!-- your answer here -->
+{
+  "kitchen": {
+    "cupboard": {
+      "bowls and plates"
+    }
+  } "electric stove": {"heating elements": {
+    "small", "medium", "large", "extra large"
+  }
+    "herbs and spice rack": {
+      "chives", "lemon grass", "mint", "cinnamon", "nutmeg", "vanilla"
+    }
+  } "fruit basket": {
+    "apples": [
+      "fuji": 2
+      "gala": 7
+      "golden delicious": 1
+    ]
+  }
+}
 ```
 
 ## JSON Methods
@@ -70,7 +100,9 @@ Copy the JSON that you wrote for the previous question and include the new infor
 Can you write a method in the JSON that you wrote above?
 
 ```json
-<!-- your answer here -->
+const kitchen = function() {
+  return ("number of fuji apples", "number of gala apples", "number of golden delicious apples")
+}
 ```
 
 ## JSON Comments
@@ -78,5 +110,5 @@ Can you write a method in the JSON that you wrote above?
 Can you write comments in the JSON that you wrote above?
 
 ```json
-<!-- your answer here -->
+No, comments cannot be in JSON.
 ```
